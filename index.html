@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <script src="./onselect.js"></script>
+  <script src="./listFiller.js"></script>
+  <script src="./request.js"></script>
+  <title>Bulletify</title>
+</head>
+<body>
+  <h1 class="page-title">Bulletify</h1>
+
+  <select name="categories" id="categories" class="option wrapper">
+
+    <option value=""></option>
+    <option value="burned">Burned</option>
+    <option value="missing ingredient">Missing Ingredient</option>
+
+  </select>
+
+  <ul id="items" class="items wrapper">
+
+  </ul>
+
+  <script>
+    onselect(listFiller, request);
+  </script>
+</body>
+</html>
